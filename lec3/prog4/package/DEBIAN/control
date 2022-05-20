@@ -1,0 +1,10 @@
+Package: program4
+Version: 1.0
+Section: unknown
+Priority: optional
+Depends: libc6
+Architecture: amd64
+Essential: no
+Installed-Size: 16
+Maintainer: Sm1lick <2hack0max0hack2@gmail.com>
+Description: Programm 4 from Lecture 3
