@@ -1,32 +1,21 @@
-<<<<<<< HEAD
-# Report for Program №1
+# Report for Program !
 
-Specifying the length of the array:
-printf("Enter length of array: ");
-scanf("%d", &length);
+This program creates an array of the specified length
 
-Allocation of memory for an array. If no memory is allocated, the malloc function returns NULL:
-if ((array = (int * ) malloc(length * sizeof(int))) != NULL)
+> printf("Enter length of array: ");
+> scanf("%d", &length);
 
-If everything went without errors, the program will clear the allocated memory:
-if (array != NULL)
-{
-free(array);
-}
+After that, memory allocation for this array should occur, and if this does not happen, the "malloc" function returns NULL
 
-=======
-#Report for Program1
+> if ((array = (int * ) malloc(length * sizeof(int))) != NULL)
 
-Specifying the length of the array:
-printf("Enter length of array: ");
-scanf("%d", &length);
+Then the number of allocated bytes should be output
 
-Allocation of memory for an array. If no memory is allocated, the malloc function returns NULL:
-if ((array = (int * ) malloc(length * sizeof(int))) != NULL)
+> printf("Allocated %lu bytes\n", length * sizeof(*array));
 
-If everything went without errors, the program will clear the allocated memory:
-if (array != NULL)
-{
-free(array);
-}
+If there were no failures at all stages of the program execution, the program will clear the allocated memory
 
+> if (array != NULL)
+> {
+> free(array);
+> }
