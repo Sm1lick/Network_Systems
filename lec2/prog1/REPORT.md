@@ -1,4 +1,4 @@
-# Report for Program !
+# Report for Program 1 
 
 This program creates an array of the specified length
 
